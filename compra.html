@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compra de Ingressos</title>
+  <link rel="stylesheet" type="text/css" href="compra.css">
+</head>
+<body>
+  <div class="containerHeader">
+    <h1>CineColor</h1>
+    <div class="botao">
+        <a href="main.html"><h2>Início</h2></a>
+        <a href="compra.html"><h2>Compre Ingressos</h2></a>
+        <a href="preços.html"><h2>Preços</h2></a>
+        <a href="promocao.html"><h2>Promoções</h2></a>
+        <a href="localidades.html"><h2>Encontre um Cinema</h2></a>
+        <a href="logincadastro.html"><h2>Entrar</h2></a>
+    </div>
+  </div>
+  <br><br>
+  <h1>Compra de Ingressos</h1>
+  
+  <form id="compra-form">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    
+    <label for="filme">Filme:</label>
+    <select id="filme" required>
+      <option value="">Selecione um filme</option>
+      <option value="filme1">Dungeons & Dragons: Honra Entre Rebeldes</option>
+      <option value="filme2">Guardiões da Galáxia: Volume 3</option>
+      <option value="filme3">Super Mario Bros - O Filme</option>
+      <option value="filme4">O Amor Mandou Mensagem</option>
+      <option value="filme5">A Pequena Sereia</option>
+    </select>
+    <br>
+    <label for="horario">Horário:</label>
+    <select id="horario" required>
+      <option value="">Selecione um horário</option>
+      <option value="10:00">11:00h</option>
+      <option value="14:30">12:10h</option>
+      <option value="19:00">13:50h</option>
+      <option value="19:00">14:50h</option>
+      <option value="19:00">16:50h</option>
+      <option value="19:00">18:50h</option>
+      <option value="19:00">20:50h</option>
+      <option value="19:00">21:50h</option>
+    </select>
+    <br>
+    <h2>Selecione um assento:</h2>
+    <div id="sala"></div>
+    <br>
+    <label for="assento">Assento selecionado:</label>
+    <input type="text" id="assento" readonly>
+    <br>
+    <div>Preço total: R$ <span id="price">0.00</span></div><br>
+    <button type="submit">Comprar</button>
+  </form>
+  
+  <div id="mensagem"></div>
+  
+  <script src="scriptcompra.js"></script>
+</body>
+</html>

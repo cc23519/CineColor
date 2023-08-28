@@ -1,0 +1,104 @@
+body{
+  background-color: black;
+}
+
+h1{
+  font-family: 'Nexa Heavy';
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: white;
+  background: url(logo/giflogo.gif);
+  background-position: left;
+  -webkit-background-clip: text;
+  color: #00000047;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: inline;
+}
+
+
+
+@font-face {
+    font-family: 'DOGMA';
+    src: url('fontes/DOGMA.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nexa Light';
+    src: url('fontes/Nexa-ExtraLight.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nexa Heavy';
+    src: url('fontes/Nexa-Heavy.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins Light';
+    src: url('fontes/Poppins-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins Regular';
+    src: url('fontes/Poppins-Regular.ttf') format('truetype');
+  }
+  
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  width: 300px;
+  padding: 20px;
+  background-color: #f2f2f27e;
+  border-radius: 5px;
+  margin:20px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-family: 'Poppins Regular';
+}
+
+input {
+  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ed7c74df;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  font-family: 'Poppins Regular';
+  position: relative;
+  top: 0;
+}
